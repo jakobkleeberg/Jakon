@@ -1,6 +1,6 @@
 let hand = 0
 input.onGesture(Gesture.Shake, function () {
-    hand = randint(1, 3)
+    hand = randint(1, 4)
     if (hand == 1) {
         basic.showLeds(`
             # # # # #
@@ -24,6 +24,14 @@ input.onGesture(Gesture.Shake, function () {
             . # # # .
             . # # # .
             . . . . .
+            `)
+    } else if (hand == 4) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            . # # # .
             `)
     }
 })
